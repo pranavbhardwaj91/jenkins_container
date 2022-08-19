@@ -1,0 +1,51 @@
+FROM ubuntu
+MAINTAINER srikanth.chandika <srikanth.chandika@imaginea.com>
+
+ENV JAVA_HOME=/usr/local/java/jdk1.8.0_111 \
+	PATH=$JAVA_HOME/bin:$PATH \
+	TOMCAT_VERSION=tomcat8 \
+	TOMCAT_HOME=/usr/share/tomcat8 \
+	JENKINS_HOME='/usr/share/tomcat8/.jenkins' \
+	JENKINS_PLUGINS_URL='https://s3-us-west-2.amazonaws.com/cicdtraining/default-jenkins-plugins.tar.gz' \
+	JENKINS_WAR_URL='https://s3-us-west-2.amazonaws.com/cicdtraining/pranavb/latest/jenkins.war' \
+	TOMCAT_PATH='/var/lib/tomcat8/webapps' \
+	JENKINS_WAR_PATH='/var/lib/tomcat8/webapps/jenkins.war'
+
+#Installing Required Packages
+RUN apt-get update && apt-get install -y wget \
+				${TOMCAT_VERSION}
+
+#Downloading Jenkins WAR to webapps
+RUN wget -O $JENKINS_WAR_PATH $JENKINS_WAR_URL
+
+#Downloading Oracle JDK
+RUN wget -O /tmp/jdk-8u111-linux-x64.tar.gz --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u111-b14/jdk-8u111-linux-x64.tar.gz"
+RUN mkdir /usr/local/java && \
+    tar -xvzf /tmp/jdk-8u111-linux-x64.tar.gz -C /usr/local/java
+
+#Creating Jenkins Home, Plugins, Users
+RUN mkdir $JENKINS_HOME && \
+    wget -O /tmp/jenkins-users.tar.gz https://s3-us-west-2.amazonaws.com/cicdtraining/jenkins-users.tar.gz && \
+    tar -xvzf /tmp/jenkins-users.tar.gz -C $JENKINS_HOME
+
+RUN wget -O /tmp/default-jenkins-plugins.tar.gz $JENKINS_PLUGINS_URL && \
+    mkdir $JENKINS_HOME/plugins && \
+    tar -xvzf /tmp/default-jenkins-plugins.tar.gz -C $JENKINS_HOME/plugins && \
+    chown -R ${TOMCAT_VERSION}:${TOMCAT_VERSION} $TOMCAT_HOME && \
+    mkdir /tmp/tomcat8-tomcat8-tmp && \
+    chown -R ${TOMCAT_VERSION}:${TOMCAT_VERSION} /tmp/tomcat8-tomcat8-tmp
+
+#Startup Script for Tomcat
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+
+#Removing Unwanted files
+RUN rm -rf /tmp/jdk-8u111-linux-x64.tar.gz && \
+    rm -rf /tmp/default-jenkins-plugins.tar.gz && \
+    rm -rf /tmp/jenkins-users.tar.gz && \
+    rm -rf $JENKINS_HOME/users/admin 
+
+EXPOSE 8080
+#Starting Tomcat Service in Foreground
+CMD ["./start.sh"]
+

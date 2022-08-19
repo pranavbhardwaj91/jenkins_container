@@ -1,0 +1,6 @@
+---
+
+- hosts: 10.0.0.56
+  become: yes
+  roles: 
+  - shell_deploy

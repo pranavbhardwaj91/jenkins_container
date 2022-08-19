@@ -1,0 +1,65 @@
+---
+ - name: Installing the latest version of Python pip
+   apt: 
+    name: python-pip 
+    state: latest
+    force: yes
+
+ - name: Installing awscli with help of pip
+   pip: 
+    name: awscli
+
+ - name: Deleting the AWS credentials config directory
+   file: 
+    path: /root/.aws
+    state: absent
+
+ - name: Create the AWS config directory
+   file: 
+    path: /root/.aws
+    state: directory
+    owner: root
+    group: root
+    mode: 0755
+
+ - name: Copy AWS CLI config
+   template: 
+    src: aws_cli_config.j2
+    dest: /root/.aws/config
+    owner: root
+    group: root
+    mode: 0600
+
+ - name: Copy AWS CLI credentials
+   template:
+    src: credentials.j2
+    dest: /root/.aws/credentials
+    owner: root
+    group: root
+    mode: 0600
+
+ - name: Loging in to ECR
+   shell: aws ecr get-login --region us-west-2 >> /tmp/login.sh 
+
+ - name: Login and Pull image from aws ECR
+   shell: bash /tmp/login.sh && docker pull 575110498197.dkr.ecr.us-west-2.amazonaws.com/cicdtraining-pranav:{{ BUILD_NUMBER }}
+
+ - name: Removing old container
+   shell : docker rm -f `docker ps -a | grep -i "^.*jenkins_tomcat.*$" | awk '{print $1}'`
+   ignore_errors: yes
+
+ - name: Deploying Container
+   shell: docker run -d -p 8080:8080 --name jenkins_tomcat `docker images | awk 'NR==2{print $1}'`:{{ BUILD_NUMBER }}
+
+ - name: Waiting for container to come online
+   pause:
+    seconds: 50
+
+ - name: Deleting the AWS credentials config directory
+   file: 
+    path: /root/.aws
+    state: absent
+
+ - name: Deleting the /tmp/ directory
+   file:
+    path: /tmp/

@@ -1,0 +1,54 @@
+---
+ - name: Read uname
+   shell: uname -r
+   register: uname_output
+
+ - name: Install linux-image-extra-* packages to enable AuFS support
+   apt: 
+     name: "{{ item  }}"
+   with_items:
+     - linux-image-extra-{{ uname_output.stdout }}
+
+ - name: Add docker repository key to apt-key for package verification
+   apt_key:
+     id: "{{ apt_key_sig }}"
+     keyserver: "{{ apt_key_url }}"
+     state: present
+
+ - name: Add Docker repository and update apt cache 
+   apt_repository:
+    repo: "{{ apt_repository }}"
+    mode: '644'
+    update_cache: yes
+    state: present
+
+ - name : Installing docker and updating the cache
+   apt:
+     name: "{{ item }}"
+     update_cache: yes
+   with_items: 
+   - docker-engine 
+
+ - name: add ubuntu to docker group
+   user: 
+    name: ubuntu
+    groups: docker
+    append: yes
+
+ - template:
+     src: ufw.j2
+     dest: /etc/default/ufw
+
+ - name: Reloading the firewall
+   shell: ufw reload  
+
+ - name: Starting Docker Service
+   shell: service docker restart
+
+# - name: Removing all the existing containers
+#   shell: docker rm -f `docker ps -a | awk 'NR>1{print $1}'` 
+
+# - name: Starting Docker Service
+
+ - name: Deploying the container pulled from ECR repo
+   shell: docker pull 575110498197.dkr.ecr.us-west-2.amazonaws.com/cicdtraining-pranav:latest 

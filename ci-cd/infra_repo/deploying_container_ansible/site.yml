@@ -1,0 +1,5 @@
+---
+- hosts: 10.0.0.57
+  become: yes
+  roles: 
+    - container_deploy

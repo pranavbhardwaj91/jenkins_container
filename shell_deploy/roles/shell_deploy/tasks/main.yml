@@ -1,0 +1,7 @@
+---
+
+ - unarchive: 
+    src: jen.tar.gz
+    dest: /tmp
+    mode: ug+rwx
+ - shell: bash /tmp/setup.sh

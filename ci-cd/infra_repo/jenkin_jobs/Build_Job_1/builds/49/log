@@ -1,0 +1,602 @@
+Started by user [8mha:AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgYe/dLi1CL9gqLEvMQyAEEctgPBAAAA[0mpranavb
+[EnvInject] - Loading node environment variables.
+Building in workspace /srv/jenkins/workspace/Build_Job_1
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url ssh://git@10.0.0.56/home/git/jenkinsrepo.git # timeout=10
+Fetching upstream changes from ssh://git@10.0.0.56/home/git/jenkinsrepo.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials 
+ > git fetch --tags --progress ssh://git@10.0.0.56/home/git/jenkinsrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e0de55f9a050fa0cf655e4368351b771e5d89624 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e0de55f9a050fa0cf655e4368351b771e5d89624
+ > git rev-list e0de55f9a050fa0cf655e4368351b771e5d89624 # timeout=10
+[Build_Job_1] $ mvn package -DskipTests
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Jenkins main module
+[INFO] Jenkins cli
+[INFO] Jenkins core
+[INFO] Jenkins war
+[INFO] Tests for Jenkins core
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jenkins main module 2.38-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-maven) @ pom ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:display-info (display-info) @ pom ---
+[INFO] Maven Version: 3.3.9
+[INFO] JDK Version: 1.8.0_111 normalized as: 1.8.0-111
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.4.0-59-generic
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (default) @ pom ---
+[INFO] Adding ignore: org.eclipse.jetty.spdy.*
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-banned-dependencies) @ pom ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:timestamp-property (timestamp-property) @ pom ---
+[INFO] Setting property 'now' to '01/19/2017 12:40 GMT'.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:regex-property (version-property) @ pom ---
+[INFO] Setting property 'build.version' to '2.38-SNAPSHOT (private-01/19/2017 12:40 GMT-tomcat7)'.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ pom ---
+[INFO] Source directory: /srv/jenkins/workspace/Build_Job_1/target/generated-sources/localizer added.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateStubs (default) @ pom ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ pom ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:compile (default) @ pom ---
+[INFO] No sources found to compile
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- animal-sniffer-maven-plugin:1.15:check (default) @ pom ---
+[INFO] Signature checking is skipped.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateTestStubs (default) @ pom ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:testCompile (default) @ pom ---
+[INFO] No sources found to compile
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jenkins cli 2.38-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-maven) @ cli ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:display-info (display-info) @ cli ---
+[INFO] Maven Version: 3.3.9
+[INFO] JDK Version: 1.8.0_111 normalized as: 1.8.0-111
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.4.0-59-generic
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (default) @ cli ---
+[INFO] Adding ignore: org.eclipse.jetty.spdy.*
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-banned-dependencies) @ cli ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:timestamp-property (timestamp-property) @ cli ---
+[INFO] Setting property 'now' to '01/19/2017 12:40 GMT'.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:regex-property (version-property) @ cli ---
+[INFO] Setting property 'build.version' to '2.38-SNAPSHOT (private-01/19/2017 12:40 GMT-tomcat7)'.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ cli ---
+[INFO] Source directory: /srv/jenkins/workspace/Build_Job_1/cli/target/generated-sources/localizer added.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateStubs (default) @ cli ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-localizer-plugin:1.24:generate (default) @ cli ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ cli ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] Copying 1 resource
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to /srv/jenkins/workspace/Build_Job_1/cli/target/classes
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:compile (default) @ cli ---
+[INFO] No sources found to compile
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- animal-sniffer-maven-plugin:1.15:check (default) @ cli ---
+[INFO] Signature checking is skipped.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateTestStubs (default) @ cli ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /srv/jenkins/workspace/Build_Job_1/cli/target/test-classes
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:testCompile (default) @ cli ---
+[INFO] No sources found to compile
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ cli ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ cli ---
+[INFO] Building jar: /srv/jenkins/workspace/Build_Job_1/cli/target/cli-2.38-SNAPSHOT.jar
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-assembly-plugin:2.4:attached (default) @ cli ---
+[INFO] Building jar: /srv/jenkins/workspace/Build_Job_1/cli/target/cli-2.38-SNAPSHOT-jar-with-dependencies.jar
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jenkins core 2.38-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-maven) @ jenkins-core ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:display-info (display-info) @ jenkins-core ---
+[INFO] Maven Version: 3.3.9
+[INFO] JDK Version: 1.8.0_111 normalized as: 1.8.0-111
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.4.0-59-generic
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (default) @ jenkins-core ---
+[INFO] Adding ignore: org.eclipse.jetty.spdy.*
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-banned-dependencies) @ jenkins-core ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:timestamp-property (timestamp-property) @ jenkins-core ---
+[INFO] Setting property 'now' to '01/19/2017 12:40 GMT'.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:regex-property (version-property) @ jenkins-core ---
+[INFO] Setting property 'build.version' to '2.38-SNAPSHOT (private-01/19/2017 12:40 GMT-tomcat7)'.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ jenkins-core ---
+[INFO] Source directory: /srv/jenkins/workspace/Build_Job_1/core/target/generated-sources/antlr added.
+[INFO] Source directory: /srv/jenkins/workspace/Build_Job_1/core/target/generated-sources/localizer added.
+[INFO] Source directory: /srv/jenkins/workspace/Build_Job_1/core/target/generated-sources/taglib-interface added.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-localizer-plugin:1.24:generate (default) @ jenkins-core ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- antlr-maven-plugin:2.1:generate (cron) @ jenkins-core ---
+[INFO] Using Antlr grammar: /srv/jenkins/workspace/Build_Job_1/core/src/main/grammar/crontab.g
+[INFO] The grammar is already generated.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- antlr-maven-plugin:2.1:generate (labelExpr) @ jenkins-core ---
+[INFO] Using Antlr grammar: /srv/jenkins/workspace/Build_Job_1/core/src/main/grammar/labelExpr.g
+[INFO] The grammar is already generated.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateStubs (default) @ jenkins-core ---
+[INFO] Generated 3 Java stubs
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ jenkins-core ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-hpi-plugin:1.120:generate-taglib-interface (default) @ jenkins-core ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-dependency-plugin:2.8:copy (winsw) @ jenkins-core ---
+[INFO] Configured Artifact: com.sun.winsw:winsw:bin:1.16:exe
+[INFO] com.sun.winsw:winsw:bin:1.16:exe already exists in /srv/jenkins/workspace/Build_Job_1/core/target/classes/windows-service
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jenkins-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8464 resources
+[INFO] Copying 30 resources
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ jenkins-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1042 source files to /srv/jenkins/workspace/Build_Job_1/core/target/classes
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-encoding-plugin:1.1:check-encoding (default) @ jenkins-core ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:compile (default) @ jenkins-core ---
+[INFO] Compiled 15 Groovy classes
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- animal-sniffer-maven-plugin:1.15:check (default) @ jenkins-core ---
+[INFO] Signature checking is skipped.
+[INFO] 
+[INFO] --- bridge-method-injector:1.13:process (default) @ jenkins-core ---
+[INFO] 
+[INFO] --- access-modifier-checker:1.4:enforce (default) @ jenkins-core ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateTestStubs (default) @ jenkins-core ---
+[INFO] Generated 13 Java stubs
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jenkins-core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ jenkins-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 116 source files to /srv/jenkins/workspace/Build_Job_1/core/target/test-classes
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:testCompile (default) @ jenkins-core ---
+[INFO] Compiled 22 Groovy classes
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ jenkins-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ jenkins-core ---
+[INFO] Building jar: /srv/jenkins/workspace/Build_Job_1/core/target/jenkins-core-2.38-SNAPSHOT.jar
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-hpi-plugin:1.120:record-core-location (default) @ jenkins-core ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Jenkins war 2.38-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-maven) @ jenkins-war ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.3.1:display-info (display-info) @ jenkins-war ---
+[INFO] Maven Version: 3.3.9
+[INFO] JDK Version: 1.8.0_111 normalized as: 1.8.0-111
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.4.0-59-generic
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.3.1:enforce (default) @ jenkins-war ---
+[INFO] Adding ignore: org.eclipse.jetty.spdy.*
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-banned-dependencies) @ jenkins-war ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.3.1:enforce (enforce-versions) @ jenkins-war ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:timestamp-property (timestamp-property) @ jenkins-war ---
+[INFO] Setting property 'now' to '01/19/2017 12:41 GMT'.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:regex-property (version-property) @ jenkins-war ---
+[INFO] Setting property 'build.version' to '2.38-SNAPSHOT (private-01/19/2017 12:41 GMT-tomcat7)'.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- download-maven-plugin:1.2.1:wget (get-node) @ jenkins-war ---
+[INFO] File already exist, skipping
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- download-maven-plugin:1.2.1:wget (get-npm) @ jenkins-war ---
+[INFO] File already exist, skipping
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- frontend-maven-plugin:1.0:install-node-and-npm (install node and npm) @ jenkins-war ---
+[INFO] Node v4.0.0 is already installed.
+[INFO] NPM 3.8.9 is already installed.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- frontend-maven-plugin:1.0:npm (npm install) @ jenkins-war ---
+[INFO] Running 'npm install' in /srv/jenkins/workspace/Build_Job_1/war
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ jenkins-war ---
+[INFO] Source directory: /srv/jenkins/workspace/Build_Job_1/war/target/generated-sources/localizer added.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateStubs (default) @ jenkins-war ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- frontend-maven-plugin:1.0:gulp (gulp bundle) @ jenkins-war ---
+[INFO] Running 'gulp.js jshint bundle' in /srv/jenkins/workspace/Build_Job_1/war
+[INFO] [18:11:16] Maven project
+[INFO] [18:11:16] Setting defaults
+[INFO] [18:11:16] Bundle will be generated in directory 'src/main/webapp/jsbundles' as 'page-init.js'.
+[INFO] [18:11:16] Bundle will be generated in directory 'src/main/webapp/jsbundles' as 'pluginSetupWizard.js'.
+[INFO] [18:11:16] Bundle will be generated in directory 'src/main/webapp/jsbundles' as 'upgradeWizard.js'.
+[INFO] [18:11:16] Bundle will be generated in directory 'src/main/webapp/jsbundles' as 'config-tabbar.js'.
+[INFO] [18:11:16] Bundle will be generated in directory 'src/main/webapp/jsbundles' as 'config-scrollspy.js'.
+[INFO] [18:11:16] Bundle will be generated in directory 'src/main/webapp/jsbundles' as 'add-item.js'.
+[INFO] [18:11:16] Using gulpfile /srv/jenkins/workspace/Build_Job_1/war/gulpfile.js
+[INFO] [18:11:16] Starting 'jshint'...
+[INFO] [18:11:17] 	- Using default JSHint configuration (in jenkins-js-builder). Override by defining a .jshintrc in this folder.
+[INFO] [18:11:17] Finished 'jshint' after 514 ms
+[INFO] [18:11:17] Starting 'log-env'...
+[INFO] [18:11:17] Source Dirs:
+[INFO] [18:11:17]  - src: src/main/js,src/main/less
+[INFO] [18:11:17]  - test: src/test/js
+[INFO] [18:11:17] Finished 'log-env' after 518 μs
+[INFO] [18:11:17] Starting 'bundle_page-init'...
+[INFO] [18:11:17] Starting 'bundle_pluginSetupWizard'...
+[INFO] [18:11:17] LESS CSS pre-processing completed to 'src/main/webapp/jsbundles'.
+[INFO] [18:11:17] Starting 'bundle_upgradeWizard'...
+[INFO] [18:11:17] Starting 'bundle_config-tabbar'...
+[INFO] [18:11:17] LESS CSS pre-processing completed to 'src/main/webapp/jsbundles'.
+[INFO] [18:11:17] Starting 'bundle_config-scrollspy'...
+[INFO] [18:11:17] LESS CSS pre-processing completed to 'src/main/webapp/jsbundles'.
+[INFO] [18:11:17] Starting 'bundle_add-item'...
+[INFO] [18:11:17] LESS CSS pre-processing completed to 'src/main/webapp/jsbundles'.
+[INFO] [18:11:20] Finished 'bundle_page-init' after 3.41 s
+[INFO] [18:11:20] Finished 'bundle_add-item' after 3.13 s
+[INFO] [18:11:20] Finished 'bundle_config-tabbar' after 3.19 s
+[INFO] [18:11:20] Finished 'bundle_config-scrollspy' after 3.19 s
+[INFO] [18:11:20] Finished 'bundle_pluginSetupWizard' after 3.51 s
+[INFO] [18:11:20] Finished 'bundle_upgradeWizard' after 3.42 s
+[INFO] [18:11:20] Starting 'bundle'...
+[INFO] [18:11:20] Finished 'bundle' after 14 μs
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-dependency-plugin:2.8:list (list-dependencies) @ jenkins-war ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-dependency-plugin:2.8:unpack-dependencies (executable-war-header) @ jenkins-war ---
+[INFO] executable-war-1.34.jar already exists in destination.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-dependency-plugin:2.8:copy (resgen) @ jenkins-war ---
+[INFO] Configured Artifact: org.jenkins-ci.main:cli:jar-with-dependencies:?:jar
+[INFO] Configured Artifact: org.jenkins-ci:winstone:?:jar
+[INFO] Copying cli-2.38-SNAPSHOT-jar-with-dependencies.jar to /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/jenkins-cli.jar
+[INFO] org.jenkins-ci:winstone:3.1:jar already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-dependency-plugin:2.8:copy (detached-plugins) @ jenkins-war ---
+[INFO] Configured Artifact: org.jenkins-ci.main:maven-plugin:2.14:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:ssh-slaves:1.9:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:credentials:1.18:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:ssh-credentials:1.10:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:subversion:1.54:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:cvs:2.11:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:ant:1.2:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:javadoc:1.1:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:translation:1.10:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:external-monitor-job:1.4:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:ldap:1.11:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:pam-auth:1.1:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:mailer:1.11:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:matrix-auth:1.1:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:windows-slaves:1.0:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:antisamy-markup-formatter:1.1:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:matrix-project:1.4.1:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:script-security:1.13:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:junit:1.6:hpi
+[INFO] Configured Artifact: org.jenkins-ci.plugins:bouncycastle-api:2.16.0:hpi
+[INFO] org.jenkins-ci.main:maven-plugin:2.14:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:ssh-slaves:1.9:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:credentials:1.18:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:ssh-credentials:1.10:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:subversion:1.54:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:cvs:2.11:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:ant:1.2:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:javadoc:1.1:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:translation:1.10:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:external-monitor-job:1.4:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:ldap:1.11:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:pam-auth:1.1:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:mailer:1.11:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:matrix-auth:1.1:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:windows-slaves:1.0:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:antisamy-markup-formatter:1.1:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:matrix-project:1.4.1:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:script-security:1.13:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:junit:1.6:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] org.jenkins-ci.plugins:bouncycastle-api:2.16.0:hpi already exists in /srv/jenkins/workspace/Build_Job_1/war/target/jenkins/WEB-INF/detached-plugins
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ jenkins-war ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ jenkins-war ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /srv/jenkins/workspace/Build_Job_1/war/src/main/resources
+[INFO] skip non existing resourceDirectory /srv/jenkins/workspace/Build_Job_1/war/src/filter/resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ jenkins-war ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-license-plugin:1.7:process (default) @ jenkins-war ---
+[INFO] Generated /srv/jenkins/workspace/Build_Job_1/war/target/classes/META-INF/licenses.xml
+[INFO] About to transform xml /srv/jenkins/workspace/Build_Job_1/war/target/classes/META-INF/licenses.xml into html /srv/jenkins/workspace/Build_Job_1/war/target/classes/META-INF/licenses.html with licenses.xslt com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl@33b112ce
+[INFO] Generated /srv/jenkins/workspace/Build_Job_1/war/target/classes/META-INF/licenses.html
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:compile (default) @ jenkins-war ---
+[INFO] No sources found to compile
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- animal-sniffer-maven-plugin:1.15:check (default) @ jenkins-war ---
+[INFO] Signature checking is skipped.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateTestStubs (default) @ jenkins-war ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ jenkins-war ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /srv/jenkins/workspace/Build_Job_1/war/src/test/resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ jenkins-war ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:testCompile (default) @ jenkins-war ---
+[INFO] No sources found to compile
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ jenkins-war ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- frontend-maven-plugin:1.0:gulp (gulp test) @ jenkins-war ---
+[INFO] Skipping test phase.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.6:war (default-war) @ jenkins-war ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [jenkins-war] in [/srv/jenkins/workspace/Build_Job_1/war/target/jenkins]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/srv/jenkins/workspace/Build_Job_1/war/src/main/webapp]
+[INFO] Webapp assembled in [5585 msecs]
+[INFO] Building war: /srv/jenkins/workspace/Build_Job_1/war/target/jenkins.war
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:attach-artifact (deploy-war-for-test) @ jenkins-war ---
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Tests for Jenkins core 2.38-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-maven) @ test ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:display-info (display-info) @ test ---
+[INFO] Maven Version: 3.3.9
+[INFO] JDK Version: 1.8.0_111 normalized as: 1.8.0-111
+[INFO] OS Info: Arch: amd64 Family: unix Name: linux Version: 4.4.0-59-generic
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (default) @ test ---
+[INFO] Adding ignore: org.eclipse.jetty.spdy.*
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-enforcer-plugin:1.0.1:enforce (enforce-banned-dependencies) @ test ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:timestamp-property (timestamp-property) @ test ---
+[INFO] Setting property 'now' to '01/19/2017 12:41 GMT'.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:regex-property (version-property) @ test ---
+[INFO] Setting property 'build.version' to '2.38-SNAPSHOT (private-01/19/2017 12:41 GMT-tomcat7)'.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ test ---
+[INFO] Source directory: /srv/jenkins/workspace/Build_Job_1/test/target/generated-sources/localizer added.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateStubs (default) @ test ---
+[INFO] No sources found for Java stub generation
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-remote-resources-plugin:1.2.1:process (default) @ test ---
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /srv/jenkins/workspace/Build_Job_1/test/src/main/resources
+[INFO] skip non existing resourceDirectory /srv/jenkins/workspace/Build_Job_1/test/src/filter/resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ test ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:compile (default) @ test ---
+[INFO] No sources found to compile
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- animal-sniffer-maven-plugin:1.15:check (default) @ test ---
+[INFO] Signature checking is skipped.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:generateTestStubs (default) @ test ---
+[INFO] Generated 39 Java stubs
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 165 resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 316 source files to /srv/jenkins/workspace/Build_Job_1/test/target/test-classes
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPListener.java:[32,21] ActivationGroupImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPListener.java:[33,21] UnicastServerRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JSON1.java:[48,41] CompositeInvocationHandlerImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/CommonsCollections4.java:[43,51] TrAXFilter is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[33,21] UnicastRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[34,24] LiveRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[35,28] TCPEndpoint is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPListener.java:[55,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[4,58] TemplatesImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[19,46] DOM is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[20,46] TransletException is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[21,54] AbstractTranslet is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[22,51] TemplatesImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[23,51] TransformerFactoryImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[24,42] DTMAxisIterator is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[25,49] SerializationHandler is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JenkinsListener.java:[48,21] Util is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JenkinsListener.java:[49,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPClient.java:[41,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/CommonsCollections3.java:[46,51] TrAXFilter is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[41,18] ReflectionFactory is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[42,21] ActivationGroupImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[43,21] UnicastRef2 is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[44,21] Util is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[45,24] LiveRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[46,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[47,28] TCPEndpoint is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Reflections.java:[7,18] ReflectionFactory is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPListener.java:[32,21] ActivationGroupImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPListener.java:[33,21] UnicastServerRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JSON1.java:[48,41] CompositeInvocationHandlerImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/CommonsCollections4.java:[43,51] TrAXFilter is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[33,21] UnicastRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[34,24] LiveRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[35,28] TCPEndpoint is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPListener.java:[55,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[4,58] TemplatesImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[19,46] DOM is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[20,46] TransletException is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[21,54] AbstractTranslet is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[22,51] TemplatesImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[23,51] TransformerFactoryImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[24,42] DTMAxisIterator is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[25,49] SerializationHandler is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JenkinsListener.java:[48,21] Util is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JenkinsListener.java:[49,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPClient.java:[41,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/CommonsCollections3.java:[46,51] TrAXFilter is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[41,18] ReflectionFactory is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[42,21] ActivationGroupImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[43,21] UnicastRef2 is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[44,21] Util is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[45,24] LiveRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[46,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[47,28] TCPEndpoint is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Reflections.java:[7,18] ReflectionFactory is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPListener.java:[32,21] ActivationGroupImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPListener.java:[33,21] UnicastServerRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JSON1.java:[48,41] CompositeInvocationHandlerImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/CommonsCollections4.java:[43,51] TrAXFilter is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[33,21] UnicastRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[34,24] LiveRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[35,28] TCPEndpoint is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPListener.java:[55,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[4,58] TemplatesImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[19,46] DOM is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[20,46] TransletException is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[21,54] AbstractTranslet is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[22,51] TemplatesImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[23,51] TransformerFactoryImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[24,42] DTMAxisIterator is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Gadgets.java:[25,49] SerializationHandler is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JenkinsListener.java:[48,21] Util is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JenkinsListener.java:[49,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPClient.java:[41,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/CommonsCollections3.java:[46,51] TrAXFilter is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[41,18] ReflectionFactory is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[42,21] ActivationGroupImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[43,21] UnicastRef2 is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[44,21] Util is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[45,24] LiveRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[46,24] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/Security232Test.java:[47,28] TCPEndpoint is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/util/Reflections.java:[7,18] ReflectionFactory is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPListener.java:[65,68] ActivationGroupImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPListener.java:[68,16] UnicastServerRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JSON1.java:[124,8] CompositeInvocationHandlerImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JSON1.java:[124,63] CompositeInvocationHandlerImpl is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/CommonsCollections4.java:[76,51] TrAXFilter is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[91,8] TCPEndpoint is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[91,29] TCPEndpoint is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[92,8] UnicastRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[92,29] UnicastRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/payloads/JRMPClient.java:[92,44] LiveRef is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPListener.java:[172,38] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPListener.java:[172,77] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPListener.java:[183,29] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPListener.java:[184,42] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPListener.java:[194,29] TransportConstants is internal proprietary API and may be removed in a future release
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] /srv/jenkins/workspace/Build_Job_1/test/src/test/java/jenkins/security/security218/ysoserial/exploit/JRMPListener.java:[198,29] TransportConstants is internal proprietary API and may be removed in a future release
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- gmaven-plugin:1.5-jenkins-3:testCompile (default) @ test ---
+[INFO] Compiled 54 Groovy classes
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ test ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ test ---
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] Jenkins main module ................................ SUCCESS [  2.841 s]
+[INFO] Jenkins cli ........................................ SUCCESS [  6.633 s]
+[INFO] Jenkins core ....................................... SUCCESS [ 48.046 s]
+[INFO] Jenkins war ........................................ SUCCESS [ 34.836 s]
+[INFO] Tests for Jenkins core ............................. SUCCESS [ 30.217 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:03 min
+[INFO] Finished at: 2017-01-19T18:12:07+05:30
+[INFO] Final Memory: 80M/252M
+[INFO] ------------------------------------------------------------------------
+[Build_Job_1] $ /bin/sh -xe /tmp/tomcat7-tomcat7-tmp/hudson6762535152688752166.sh
++ python /srv/jenkins/s3.py 49 ******** ******** Build_Job_1
+Uploading /srv/jenkins/workspace/Build_Job_1/war/target/jenkins.war to Amazon S3 bucket cicdtraining/ pranavb/49
+..........+ aws s3 cp s3://cicdtraining/pranavb/49/jenkins.war s3://cicdtraining/pranavb/latest/ --acl public-read
+Completed 1 of 9 part(s) with 1 file(s) remainingCompleted 2 of 9 part(s) with 1 file(s) remainingCompleted 3 of 9 part(s) with 1 file(s) remainingCompleted 4 of 9 part(s) with 1 file(s) remainingCompleted 5 of 9 part(s) with 1 file(s) remainingCompleted 6 of 9 part(s) with 1 file(s) remainingCompleted 7 of 9 part(s) with 1 file(s) remainingCompleted 8 of 9 part(s) with 1 file(s) remainingCompleted 9 of 9 part(s) with 1 file(s) remainingcopy: s3://cicdtraining/pranavb/49/jenkins.war to s3://cicdtraining/pranavb/latest/jenkins.war
+Warning: you have no plugins providing access control for builds, so falling back to legacy behavior of permitting any downstream builds to be triggered
+Triggering a new build of [8mha:AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZB/az8JH2n0syclHiv/KR4I30AEDUxo8YAAAA=[0mBuild_Job_2
+Finished: SUCCESS

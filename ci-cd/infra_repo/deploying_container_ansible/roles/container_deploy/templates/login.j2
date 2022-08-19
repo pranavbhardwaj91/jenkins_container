@@ -1,0 +1,8 @@
+#!/bin/bash
+mkdir -p /tmp/ansible/
+touch /tmp/ansible/login_ecr_shell.txt
+sed -i '1s/^/#\/bin\/bash \n/' /tmp/ansible/login_ecr_shell.txt
+#aws ecr get-login --region us-west-2 > /tmp/ansible/login_ecr_shell.txt
+#mv /tmp/ansible/login_ecr_shell.txt /tmp/ansible/login_ecr_shell.sh
+#chmod +x /tmp/ansible/login_ecr_shell.sh
+#sh ./tmp/ansible/login_ecr_shell.sh

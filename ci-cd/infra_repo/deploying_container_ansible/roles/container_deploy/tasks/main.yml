@@ -1,0 +1,7 @@
+---
+
+# - name: Including Install Docker yaml
+#   include: install_docker.yml
+
+ - name: Including Deploy Container yaml
+   include: deploy_container.yml

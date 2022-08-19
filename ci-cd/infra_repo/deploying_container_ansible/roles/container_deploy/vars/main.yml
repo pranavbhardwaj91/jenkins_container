@@ -1,0 +1,9 @@
+---
+
+apt_key_url: hkp://pgp.mit.edu:80
+apt_key_sig: 58118E89F3A912897C070ADBF76221572C52609D
+accept_connections: ACCEPT
+apt_repository: deb https://apt.dockerproject.org/repo ubuntu-trusty main
+AWS_ACCESS_KEY_ID: xxxxxxxxxxxxxxxxxxxxxx
+AWS_SECRET_ACCESS_KEY: xxxxxxxxxxxxxxxxxx 
+

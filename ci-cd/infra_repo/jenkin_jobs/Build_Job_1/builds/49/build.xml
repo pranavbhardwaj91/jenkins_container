@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>pranav</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@1.93.1">
+      <build class="build" reference="../../.."/>
+    </org.jenkinsci.plugins.envinject.EnvInjectPluginAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.0.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.1.0">
+              <sha1>e0de55f9a050fa0cf655e4368351b771e5d89624</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>49</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>ssh://git@10.0.0.56/home/git/jenkinsrepo.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.0.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/srv/jenkins/workspace/Build_Job_1</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.plugins.parameterizedtrigger.CapturedEnvironmentAction plugin="parameterized-trigger@2.32">
+      <env serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>48</int>
+          <string>_</string>
+          <string>/usr/share/tomcat7/bin/catalina.sh</string>
+          <string>_SYSTEMCTL_SKIP_REDIRECT</string>
+          <string>true</string>
+          <string>AWS_ACCESS_KEY_ID</string>
+          <string>AKIAIPIMWDK6XOFULILA</string>
+          <string>AWS_SECRET_ACCESS_KEY</string>
+          <string>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</string>
+          <string>BUILD_CAUSE</string>
+          <string>MANUALTRIGGER</string>
+          <string>BUILD_CAUSE_MANUALTRIGGER</string>
+          <string>true</string>
+          <string>BUILD_DISPLAY_NAME</string>
+          <string>#49</string>
+          <string>BUILD_ID</string>
+          <string>49</string>
+          <string>BUILD_NUMBER</string>
+          <string>49</string>
+          <string>BUILD_TAG</string>
+          <string>jenkins-Build_Job_1-49</string>
+          <string>BUILD_URL</string>
+          <string>http://10.0.0.55:8080/jenkins/job/Build_Job_1/49/</string>
+          <string>CATALINA_BASE</string>
+          <string>/var/lib/tomcat7</string>
+          <string>CATALINA_HOME</string>
+          <string>/usr/share/tomcat7</string>
+          <string>CATALINA_PID</string>
+          <string>/var/run/tomcat7.pid</string>
+          <string>CATALINA_TMPDIR</string>
+          <string>/tmp/tomcat7-tomcat7-tmp</string>
+          <string>CLASSPATH</string>
+          <string></string>
+          <string>EXECUTOR_NUMBER</string>
+          <string>0</string>
+          <string>GIT_BRANCH</string>
+          <string>origin/master</string>
+          <string>GIT_COMMIT</string>
+          <string>e0de55f9a050fa0cf655e4368351b771e5d89624</string>
+          <string>GIT_PREVIOUS_COMMIT</string>
+          <string>e0de55f9a050fa0cf655e4368351b771e5d89624</string>
+          <string>GIT_URL</string>
+          <string>ssh://git@10.0.0.56/home/git/jenkinsrepo.git</string>
+          <string>HOME</string>
+          <string>/usr/share/tomcat7</string>
+          <string>HUDSON_HOME</string>
+          <string>/srv/jenkins</string>
+          <string>HUDSON_SERVER_COOKIE</string>
+          <string>9377d3f3a01813bf</string>
+          <string>HUDSON_URL</string>
+          <string>http://10.0.0.55:8080/jenkins/</string>
+          <string>JAVA_HOME</string>
+          <string>/usr/local/java/jdk1.8.0_111</string>
+          <string>JAVA_OPTS</string>
+          <string>-Djava.awt.headless=true -Xmx128m -XX:+UseConcMarkSweepGC</string>
+          <string>JENKINS_HOME</string>
+          <string>/srv/jenkins</string>
+          <string>JENKINS_SERVER_COOKIE</string>
+          <string>9377d3f3a01813bf</string>
+          <string>JENKINS_URL</string>
+          <string>http://10.0.0.55:8080/jenkins/</string>
+          <string>JOB_BASE_NAME</string>
+          <string>Build_Job_1</string>
+          <string>JOB_NAME</string>
+          <string>Build_Job_1</string>
+          <string>JOB_URL</string>
+          <string>http://10.0.0.55:8080/jenkins/job/Build_Job_1/</string>
+          <string>JSSE_HOME</string>
+          <string>/usr/local/java/jdk1.8.0_111/jre/</string>
+          <string>LANG</string>
+          <string>en_US.UTF-8</string>
+          <string>NLSPATH</string>
+          <string>/usr/dt/lib/nls/msg/%L/%N.cat</string>
+          <string>NODE_LABELS</string>
+          <string>master</string>
+          <string>NODE_NAME</string>
+          <string>master</string>
+          <string>OLDPWD</string>
+          <string>/tmp/tomcat7-tomcat7-tmp</string>
+          <string>PATH</string>
+          <string>/bin:/usr/bin:/sbin:/usr/sbin</string>
+          <string>PWD</string>
+          <string>/var/lib/tomcat7</string>
+          <string>ROOT_BUILD_CAUSE</string>
+          <string>MANUALTRIGGER</string>
+          <string>ROOT_BUILD_CAUSE_MANUALTRIGGER</string>
+          <string>true</string>
+          <string>SHLVL</string>
+          <string>1</string>
+          <string>TOMCAT7_GROUP</string>
+          <string>tomcat7</string>
+          <string>TOMCAT7_USER</string>
+          <string>tomcat7</string>
+          <string>WORKSPACE</string>
+          <string>/srv/jenkins/workspace/Build_Job_1</string>
+          <string>XFILESEARCHPATH</string>
+          <string>/usr/dt/app-defaults/%L/Dt</string>
+        </tree-map>
+      </env>
+    </hudson.plugins.parameterizedtrigger.CapturedEnvironmentAction>
+  </actions>
+  <queueId>7</queueId>
+  <timestamp>1484829599807</timestamp>
+  <startTime>1484829599808</startTime>
+  <result>SUCCESS</result>
+  <duration>191958</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/srv/jenkins/workspace/Build_Job_1</workspace>
+  <hudsonVersion>2.19</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.0.1">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

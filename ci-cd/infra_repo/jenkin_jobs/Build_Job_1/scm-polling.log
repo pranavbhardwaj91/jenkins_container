@@ -1,0 +1,9 @@
+Started on Jan 19, 2017 6:15:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision e0de55f9a050fa0cf655e4368351b771e5d89624 (refs/remotes/origin/master)
+using GIT_SSH to set credentials 
+ > git ls-remote -h ssh://git@10.0.0.56/home/git/jenkinsrepo.git # timeout=10
+Found 1 remote heads on ssh://git@10.0.0.56/home/git/jenkinsrepo.git
+[poll] Latest remote head revision on refs/heads/master is: e0de55f9a050fa0cf655e4368351b771e5d89624 - already built by 49
+Done. Took 0.34 sec
+No changes
